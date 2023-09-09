@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+</head>
+<body>
+<center>
+    <!--
+      <h1>-<h6>:标题，标题独占一行，分为1级-6级标题
+      <center>:居中，该标签后期不再建议使用了。后期控制组件布局靠CSS样式。因此该标签临时使用
+      <input>:输入组件，用于获取用户在页面上输入的内容。
+              输入组件的样子有很多，可以通过type属性来指定，常见的有:
+              type="text"       文本框
+              type="password"   密码框
+              type="checkbox"   多选框
+              type="radio"      单选框
+              type="button"     按钮
+
+              注:像单选框，复选框这类组件，使用时会将多个组件划分为一组，使用name属性为组件取名字，
+                 名字相同的组件就是一组的。
+      <br>:换行
+
+      <table>:表格。属性border用于指定边框。
+            <table>标签中包含<tr>标签用于表示行
+            <tr>标签中包含<td>标签用于表示列
+            <td>标签中常见属性:
+            align:对其方式。left左对齐,right右对齐,center剧中对其
+            colspan:跨列合并列，合并是从左向右合并列
+            rowspan:跨行合并列，合并是从上向下合并列
+    -->
+    <h1>百度</h1>
+    <input type="text" size="30">
+    <input type="button" value="百度一下" onclick="alert('点你妹啊!')">
+    <br>
+    <input type="radio" name="gender">男 <input type="radio" name="gender">女
+    <br>
+    <!--
+        超链接，或图片等组件在定位本网站其他资源时，指定路径通常以"/"开始。
+        这里的"/"表示URL中资源抽象路径中最开始的"/"
+        例如:
+        http://localhost:8080/index.html
+                             ^
+                            "/"就是这里
+        因此上述URL地址访问index.html页面时，如果该页面上定义了其他超链接，比如:
+        <a href="/classtable.html">课程表</a>
+        那么点击该超链接时，浏览器实际请求的位置:
+        http://localhost:8080/classtable.html
+
+        而SpringBoot项目规定，资源的抽象路径最开始的"/"相当于是项目中src/main/resources中static目录
+        因此:
+        http://localhost:8080/classtable.html
+                             ^这个相当与static目录
+        访问的就是static目录下的classtable.html页面了
+
+      -->
+    <a href="/reg.html">注册</a>
+    <a href="/login.html">登录</a>
+    <a href="/userList">用户列表</a>
+    <a href="/writeArticle.html">发表文章</a>
+    <a href="/classtable.html">课程表</a>
+    <br>
+    <a href="http://www.taobao.com">淘宝</a>
+    <br>
+    <table border="1">
+        <tr>
+            <td>第一列</td>
+            <td>第二列</td>
+            <td colspan="2" align="center">第三列</td>
+        </tr>
+        <tr>
+            <td>第一列</td>
+            <td rowspan="2">第二列</td>
+            <td><a href="http://www.bilibili.com">b站</a></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>第一列</td>
+
+            <td>第三列</td>
+            <td>第四列</td>
+        </tr>
+        <tr>
+            <td>第一列</td>
+            <td>第二列</td>
+            <td>第三列</td>
+            <td>第四列</td>
+        </tr>
+    </table>
+    <!--<h2>我是标题</h2>
+    <h3>我是标题</h3>
+    <h4>我是标题</h4>
+    <h5>我是标题</h5>
+    <h6>我是标题</h6>-->
+</center>
+</body>
+</html>
